@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rinterio</title>
+        <!-- DaisyUi cdn and Tailwind css -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+            rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- fontawesome cdn -->
+        <script src="https://kit.fontawesome.com/61de522b6e.js" crossorigin="anonymous"></script>
+        <!-- google font cdn -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+            rel="stylesheet">
+        <!--Tailwind config  -->
+        <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                backgroundImage: { 
+                    'hero': "url('./assets/bg.jpg')",
+                } 
+              colors: {
+                clifford: '#da373d',
+                primarybg: '#ABEF5F',
+              }
+            }
+          }
+        }
+      </script>
+        <!-- internal css -->
+        <style>
+            .font-manrope {
+                font-family: "Manrope", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                font-style: normal;
+            }
+       </style>
+    </head>
+    <body class="font-manrope">
+        <!-- header section starts -->
+        <header class="container mx-auto bg-gradient-to-l from-white to-[#ffffff00]">
+            <!-- navbar starts here-->
+            <nav>
+                <div class="navbar ">
+                    <div class="navbar-start ">
+                      
+                      <a class="btn  btn-ghost text-3xl font-extrabold">
+                        <span class="h-10 w-10 bg-[#ABEF5F] mx-auto p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
+                              </svg>
+                        </span> Rinterio
+                    </a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end hidden md:flex md:mr-16 ">
+                        <i class="fa-solid fa-magnifying-glass p-2 shadow rounded-full mr-4 cursor-pointer"></i>
+                        <i class="fa-solid fa-cart-shopping p-2 shadow rounded-full mx-4 cursor-pointer"></i>
+                        <a class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F] text-xl font-extrabold px-5 h-12">Book Consult
+                            <span class="h-8 w-8 bg-[#000000] mx-auto p-2 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-4">
+                                    <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
+                                  </svg>
+                            </span>  
+                        </a>
+                    </div>
+                    <div class="dropdown ">
+                        <div tabindex="0" role="button" class="btn btn-ghost md:hidden ml-20">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                          <li><a>Home</a></li>
+                          <li><a>Services</a></li>
+                          <li><a>Portfolio</a></li>
+                          <li><a>Blogs</a></li>
+                          <li><a>Contact Us</a></li>
+                        </ul>
+                      </div>
+                  </div>
+            </nav>
+            <!-- navbar ends here -->
+
+            <!-- banner starts  here-->
+             <section>
+                <div class="hero  ">
+                    <div class=" text-center">
+                      <div class=" mx-auto space-y-3 mt-14">
+                        <img class="mx-auto px-5 md:p-0" src="./assets/banner.png" alt="">
+                        <h1 class="text-4xl md:text-6xl font-extrabold md:leading-relaxed w-4/5 mx-auto">A barn house of this design has a striking appearance</h1>
+                        <p class="py-6 p-5 md:p-0 md:w-3/5 mx-auto leading-7">
+                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                        </p>
+                        <a class="btn bg-[#acef5f6b] hover:bg-[#acef5f6b] text-xl font-extrabold px-5 h-12">View Details
+                            <span class="h-8 w-8 bg-[#ABEF5F] mx-auto p-2 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="size-4">
+                                    <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
+                                  </svg>
+                            </span>  
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+             </section>
+            <!-- banner ends  here-->
+        </header>
+
+        <!-- main section starts -->
+        <main class="container">
+            <!-- design section starts here -->
+        </main>
+
+        <!--Footer section starts -->
+        <footer class="">
+
+        </footer>
+    </body>
+</html>
+
+<!-- angle right top -->
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+  <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clip-rule="evenodd" />
+</svg>
+ -->
