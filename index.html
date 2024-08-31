@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth snap-y">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,6 +35,10 @@
       </script>
         <!-- internal css -->
         <style>
+            html, body, main{
+                scroll-behavior: smooth;
+                overflow-x: hidden;
+            }
             .font-manrope {
                 font-family: "Manrope", sans-serif;
                 font-optical-sizing: auto;
@@ -47,7 +51,7 @@
             }
        </style>
     </head>
-    <body class="font-manrope">
+    <body class="font-manrope ">
         <!-- header section starts -->
         <header
             class="container mx-auto bg-gradient-to-l from-white to-[#ffffff00]">
