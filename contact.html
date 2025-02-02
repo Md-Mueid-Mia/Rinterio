@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us - Rinterio</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+            rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <script>
+        tailwind.config = {
+          theme: {
+            extend: { 
+              colors: {
+                clifford: '#da373d',
+                primarybg: '#ABEF5F',
+                dark1: '#494949',
+                dark2: '#737373',
+              }
+            }
+          }
+        }
+      </script>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <header
+            class="container mx-auto bg-gradient-to-l from-white to-[#ffffff00]">
+            <nav>
+                <div class="navbar justify-between">
+                    <div class="navbar-start ">
+
+                        <a class="btn  btn-ghost text-3xl font-extrabold">
+                            <span
+                                class="h-10 w-10 bg-[#ABEF5F] mx-auto p-2 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6">
+                                    <path fill-rule="evenodd"
+                                        d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span> Rinterio
+                        </a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/service.html">Services</a></li>
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                            <li><a href="/blogs.html">Blogs</a></li>
+                            <li><a href="/contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end hidden md:flex md:mr-16 ">
+                        <i
+                            class="fa-solid fa-magnifying-glass p-2 shadow rounded-full mr-4 cursor-pointer"></i>
+                        <i
+                            class="fa-solid fa-cart-shopping p-2 shadow rounded-full mx-4 cursor-pointer"></i>
+                        <a
+                            class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F] text-xl font-extrabold px-5 h-12">Book
+                            Consult
+                            <span
+                                class="h-8 w-8 bg-[#000000] mx-auto p-2 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="white"
+                                    class="size-4">
+                                    <path fill-rule="evenodd"
+                                        d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="dropdown ">
+                        <div tabindex="0" role="button"
+                            class="btn btn-ghost md:hidden bg-[#f0efef] rounded-full">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content right-0 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/service.html">Services</a></li>
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                            <li><a href="/blogs.html">Blogs</a></li>
+                            <li><a href="/contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Contact Hero Section -->
+        <section class="container mx-auto py-16 text-center">
+            <h1 class="text-5xl font-bold mb-4">Get In Touch</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">Let's discuss how we can
+                transform your space into something extraordinary.</p>
+        </section>
+
+        <!-- Contact Information Cards -->
+        <section class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all">
+                    <div class="card-body text-center">
+                        <div
+                            class="mx-auto w-16 h-16 bg-[#ABEF5F] rounded-full flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-location-dot text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Visit Us</h3>
+                        <p class="text-gray-600">123 Design Street, Creative
+                            City, 12345</p>
+                    </div>
+                </div>
+
+                <div
+                    class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all">
+                    <div class="card-body text-center">
+                        <div
+                            class="mx-auto w-16 h-16 bg-[#ABEF5F] rounded-full flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-phone text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Call Us</h3>
+                        <p class="text-gray-600">+1 (234) 567-8900</p>
+                    </div>
+                </div>
+
+                <div
+                    class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all">
+                    <div class="card-body text-center">
+                        <div
+                            class="mx-auto w-16 h-16 bg-[#ABEF5F] rounded-full flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-envelope text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Email Us</h3>
+                        <p class="text-gray-600">info@rinterio.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="container mx-auto px-4 py-16">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white shadow-xl rounded-lg p-8">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="label">
+                                    <span class="label-text">Full Name</span>
+                                </label>
+                                <input type="text" placeholder="John Doe"
+                                    class="input input-bordered w-full" />
+                            </div>
+                            <div>
+                                <label class="label">
+                                    <span class="label-text">Email</span>
+                                </label>
+                                <input type="email"
+                                    placeholder="email@example.com"
+                                    class="input input-bordered w-full" />
+                            </div>
+                        </div>
+                        <div>
+                            <label class="label">
+                                <span class="label-text">Subject</span>
+                            </label>
+                            <input type="text" placeholder="How can we help?"
+                                class="input input-bordered w-full" />
+                        </div>
+                        <div>
+                            <label class="label">
+                                <span class="label-text">Message</span>
+                            </label>
+                            <textarea
+                                class="textarea textarea-bordered w-full h-32"
+                                placeholder="Your message"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button
+                                class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F] text-xl font-bold px-8">
+                                Send Message
+                                <span
+                                    class="h-8 w-8 bg-[#000000] mx-auto p-2 rounded-full ml-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24" fill="white"
+                                        class="size-4">
+                                        <path fill-rule="evenodd"
+                                            d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="container mx-auto px-4 py-16">
+            <div class="w-full h-[400px] rounded-lg overflow-hidden shadow-xl">
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d17222.655891282906!2d89.9906723!3d23.3942615!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1738474875834!5m2!1sen!2sbd"
+                    width="100%" height="600" style="border:0;" allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#1C1C1C]">
+            <div class="container mx-auto py-12 md:py-24">
+                <div class=" text-center">
+                    <a
+                        class="btn  btn-ghost text-3xl font-extrabold text-white mb-4">
+                        <span
+                            class="h-10 w-10 bg-[#ABEF5F] mx-auto p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="black"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span> Rinterio
+                    </a>
+                    <p
+                        class="font-medium w-[90%] md:w-2/4 mx-auto text-dark2 mb-12">The
+                        barn house captivates with its blend of rustic charm
+                        and modern sophistication, featuring weathered wood,
+                        sleek metal accents.</p>
+                </div>
+                <div class>
+                    <ul
+                        class="md:flex md:flex-row md:w-9/12 justify-between items-center mx-auto text-white text-center gap-8">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/service.html">Services</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/blogs.html">Blogs</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="block text-center mt-12 ">
+                    <a
+                        class="btn bg-[#ABEF5F] hover:bg-[#91da3fd2] rounded-full w-11/12 items-center  md:w-[212px] text-xl font-extrabold px-5 h-12 border-none">Book
+                        Consult
+                        <span
+                            class="h-8 w-8 bg-[#000000]  p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="white"
+                                class="size-4">
+                                <path fill-rule="evenodd"
+                                    d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Rinterio</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: { 
+              colors: {
+                clifford: '#da373d',
+                primarybg: '#ABEF5F',
+                dark1: '#494949',
+                dark2: '#737373',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="container mx-auto bg-gradient-to-l from-white to-[#ffffff00]">
+        <!-- Navbar (same as index.html) -->
+        <nav>
+            <div class="navbar justify-between">
+                <div class="navbar-start ">
+
+                    <a class="btn  btn-ghost text-3xl font-extrabold">
+                        <span
+                            class="h-10 w-10 bg-[#ABEF5F] mx-auto p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span> Rinterio
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/service.html">Services</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/blogs.html">Blogs</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end hidden md:flex md:mr-16 ">
+                    <i
+                        class="fa-solid fa-magnifying-glass p-2 shadow rounded-full mr-4 cursor-pointer"></i>
+                    <i
+                        class="fa-solid fa-cart-shopping p-2 shadow rounded-full mx-4 cursor-pointer"></i>
+                    <a
+                        class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F] text-xl font-extrabold px-5 h-12">Book
+                        Consult
+                        <span
+                            class="h-8 w-8 bg-[#000000] mx-auto p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="white"
+                                class="size-4">
+                                <path fill-rule="evenodd"
+                                    d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="dropdown ">
+                    <div tabindex="0" role="button"
+                        class="btn btn-ghost md:hidden bg-[#f0efef] rounded-full">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 right-0 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/service.html">Services</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/blogs.html">Blogs</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section class="container mx-auto py-16">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold mb-4">Our Services</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">Transform your space with our professional interior design services. We bring your vision to life with attention to detail and creative excellence.</p>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="container mx-auto py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+            <!-- Service Card 1 -->
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all">
+                <figure class="px-10 pt-10">
+                    <i class="fa-solid fa-house text-4xl text-[#ABEF5F]"></i>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Residential Design</h2>
+                    <p>Complete home interior design solutions tailored to your lifestyle and preferences.</p>
+                    <div class="card-actions">
+                        <button class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all">
+                <figure class="px-10 pt-10">
+                    <i class="fa-solid fa-building text-4xl text-[#ABEF5F]"></i>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Commercial Design</h2>
+                    <p>Professional interior solutions for offices, restaurants, and retail spaces.</p>
+                    <div class="card-actions">
+                        <button class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all">
+                <figure class="px-10 pt-10">
+                    <i class="fa-solid fa-paint-roller text-4xl text-[#ABEF5F]"></i>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Renovation</h2>
+                    <p>Transform your existing space with our comprehensive renovation services.</p>
+                    <div class="card-actions">
+                        <button class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all">
+                <figure class="px-10 pt-10">
+                    <i class="fa-solid fa-ruler-combined text-4xl text-[#ABEF5F]"></i>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Space Planning</h2>
+                    <p>Optimize your space utilization with our expert planning services.</p>
+                    <div class="card-actions">
+                        <button class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all">
+                <figure class="px-10 pt-10">
+                    <i class="fa-solid fa-couch text-4xl text-[#ABEF5F]"></i>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Furniture Selection</h2>
+                    <p>Curated furniture selection to match your style and budget.</p>
+                    <div class="card-actions">
+                        <button class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Card 6 -->
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all">
+                <figure class="px-10 pt-10">
+                    <i class="fa-solid fa-lightbulb text-4xl text-[#ABEF5F]"></i>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Lighting Design</h2>
+                    <p>Create the perfect ambiance with our lighting design solutions.</p>
+                    <div class="card-actions">
+                        <button class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#1C1C1C]">
+        <div class="container mx-auto py-12 md:py-24">
+            <div class=" text-center">
+                <a
+                    class="btn  btn-ghost text-3xl font-extrabold text-white mb-4">
+                    <span
+                        class="h-10 w-10 bg-[#ABEF5F] mx-auto p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="black"
+                            class="size-6">
+                            <path fill-rule="evenodd"
+                                d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span> Rinterio
+                </a>
+                <p
+                    class="font-medium w-[90%] md:w-2/4 mx-auto text-dark2 mb-12">The
+                    barn house captivates with its blend of rustic charm
+                    and modern sophistication, featuring weathered wood,
+                    sleek metal accents.</p>
+            </div>
+            <div class>
+                <ul
+                        class="md:flex md:flex-row md:w-9/12 justify-between items-center mx-auto text-white text-center gap-8">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/service.html">Services</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/blogs.html">Blogs</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+            </div>
+            <div class="block text-center mt-12 ">
+                <a
+                    class="btn bg-[#ABEF5F] hover:bg-[#91da3fd2] rounded-full w-11/12 items-center  md:w-[212px] text-xl font-extrabold px-5 h-12 border-none">Book
+                    Consult
+                    <span
+                        class="h-8 w-8 bg-[#000000]  p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="white"
+                            class="size-4">
+                            <path fill-rule="evenodd"
+                                d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

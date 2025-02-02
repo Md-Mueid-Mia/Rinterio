@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - Rinterio</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: { 
+              colors: {
+                clifford: '#da373d',
+                primarybg: '#ABEF5F',
+                dark1: '#494949',
+                dark2: '#737373',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="container mx-auto bg-gradient-to-l from-white to-[#ffffff00]">
+        <nav>
+            <div class="navbar justify-between">
+                <div class="navbar-start ">
+
+                    <a class="btn  btn-ghost text-3xl font-extrabold">
+                        <span
+                            class="h-10 w-10 bg-[#ABEF5F] mx-auto p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span> Rinterio
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/service.html">Services</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/blogs.html">Blogs</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end hidden md:flex md:mr-16 ">
+                    <i
+                        class="fa-solid fa-magnifying-glass p-2 shadow rounded-full mr-4 cursor-pointer"></i>
+                    <i
+                        class="fa-solid fa-cart-shopping p-2 shadow rounded-full mx-4 cursor-pointer"></i>
+                    <a
+                        class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F] text-xl font-extrabold px-5 h-12">Book
+                        Consult
+                        <span
+                            class="h-8 w-8 bg-[#000000] mx-auto p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="white"
+                                class="size-4">
+                                <path fill-rule="evenodd"
+                                    d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="dropdown ">
+                    <div tabindex="0" role="button"
+                        class="btn btn-ghost md:hidden bg-[#f0efef] rounded-full">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content right-0 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/service.html">Services</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/blogs.html">Blogs</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="container mx-auto py-16 text-center">
+        <h1 class="text-5xl font-bold mb-4">Our Blog</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">Discover the latest trends, tips, and inspiration for your interior design journey.</p>
+    </section>
+
+    <!-- Featured Blog Posts -->
+    <section class="container mx-auto pb-16 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Blog Post 1 -->
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all">
+                <figure class="relative">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace" class="w-full h-64 object-cover" alt="Interior Design Trends">
+                    <div class="absolute top-4 left-4 bg-[#ABEF5F] px-3 py-1 rounded-full text-sm font-bold">
+                        Trends
+                    </div>
+                </figure>
+                <div class="card-body">
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>March 15, 2024</span>
+                    </div>
+                    <h2 class="card-title">2024 Interior Design Trends</h2>
+                    <p class="text-gray-600">Discover the latest interior design trends that will shape homes in 2024...</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all">
+                <figure class="relative">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6" class="w-full h-64 object-cover" alt="Sustainable Design">
+                    <div class="absolute top-4 left-4 bg-[#ABEF5F] px-3 py-1 rounded-full text-sm font-bold">
+                        Sustainability
+                    </div>
+                </figure>
+                <div class="card-body">
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>March 12, 2024</span>
+                    </div>
+                    <h2 class="card-title">Sustainable Interior Design Tips</h2>
+                    <p class="text-gray-600">Learn how to create eco-friendly and sustainable interior spaces...</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all">
+                <figure class="relative">
+                    <img src="https://images.unsplash.com/photo-1616137466211-f939a420be84" class="w-full h-64 object-cover" alt="Color Psychology">
+                    <div class="absolute top-4 left-4 bg-[#ABEF5F] px-3 py-1 rounded-full text-sm font-bold">
+                        Tips
+                    </div>
+                </figure>
+                <div class="card-body">
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>March 10, 2024</span>
+                    </div>
+                    <h2 class="card-title">Color Psychology in Interior Design</h2>
+                    <p class="text-gray-600">Understanding how colors affect mood and atmosphere in your space...</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="bg-[#f8f8f8] py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+            <p class="text-gray-600 mb-8">Stay updated with our latest design tips and trends</p>
+            <div class="flex max-w-md mx-auto gap-4">
+                <input type="email" placeholder="Enter your email" class="input input-bordered w-full" />
+                <button class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1C1C1C]">
+        <div class="container mx-auto py-12 md:py-24">
+            <div class=" text-center">
+                <a
+                    class="btn  btn-ghost text-3xl font-extrabold text-white mb-4">
+                    <span
+                        class="h-10 w-10 bg-[#ABEF5F] mx-auto p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="black"
+                            class="size-6">
+                            <path fill-rule="evenodd"
+                                d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span> Rinterio
+                </a>
+                <p
+                    class="font-medium w-[90%] md:w-2/4 mx-auto text-dark2 mb-12">The
+                    barn house captivates with its blend of rustic charm
+                    and modern sophistication, featuring weathered wood,
+                    sleek metal accents.</p>
+            </div>
+            <div class>
+                <ul
+                        class="md:flex md:flex-row md:w-9/12 justify-between items-center mx-auto text-white text-center gap-8">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/service.html">Services</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/blogs.html">Blogs</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+            </div>
+            <div class="block text-center mt-12 ">
+                <a
+                    class="btn bg-[#ABEF5F] hover:bg-[#91da3fd2] rounded-full w-11/12 items-center  md:w-[212px] text-xl font-extrabold px-5 h-12 border-none">Book
+                    Consult
+                    <span
+                        class="h-8 w-8 bg-[#000000]  p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="white"
+                            class="size-4">
+                            <path fill-rule="evenodd"
+                                d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

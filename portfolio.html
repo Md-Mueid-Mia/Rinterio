@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Rinterio</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+            rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            <script>
+                tailwind.config = {
+                  theme: {
+                    extend: { 
+                      colors: {
+                        clifford: '#da373d',
+                        primarybg: '#ABEF5F',
+                        dark1: '#494949',
+                        dark2: '#737373',
+                      }
+                    }
+                  }
+                }
+              </script>
+    </head>
+    <body>
+        <!-- Header/Navbar (Same as other pages) -->
+        <header
+            class="container mx-auto bg-gradient-to-l from-white to-[#ffffff00]">
+            <nav>
+                <div class="navbar justify-between">
+                    <div class="navbar-start ">
+
+                        <a class="btn  btn-ghost text-3xl font-extrabold">
+                            <span
+                                class="h-10 w-10 bg-[#ABEF5F] mx-auto p-2 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-6">
+                                    <path fill-rule="evenodd"
+                                        d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span> Rinterio
+                        </a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/service.html">Services</a></li>
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                            <li><a href="/blogs.html">Blogs</a></li>
+                            <li><a href="/contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end hidden md:flex md:mr-16 ">
+                        <i
+                            class="fa-solid fa-magnifying-glass p-2 shadow rounded-full mr-4 cursor-pointer"></i>
+                        <i
+                            class="fa-solid fa-cart-shopping p-2 shadow rounded-full mx-4 cursor-pointer"></i>
+                        <a
+                            class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F] text-xl font-extrabold px-5 h-12">Book
+                            Consult
+                            <span
+                                class="h-8 w-8 bg-[#000000] mx-auto p-2 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="white"
+                                    class="size-4">
+                                    <path fill-rule="evenodd"
+                                        d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="dropdown ">
+                        <div tabindex="0" role="button"
+                            class="btn btn-ghost md:hidden bg-[#f0efef] rounded-full">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 right-0 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/service.html">Services</a></li>
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                            <li><a href="/blogs.html">Blogs</a></li>
+                            <li><a href="/contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Portfolio Hero Section -->
+        <section class="container mx-auto py-16 text-center">
+            <h1 class="text-5xl font-bold mb-4">Our Portfolio</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-12">Explore our
+                collection of stunning interior design projects that showcase
+                our expertise and creativity.</p>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button onclick="filterProjects('all')" data-category="all"
+                    class="filter-btn btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">All</button>
+                <button onclick="filterProjects('residential')"
+                    data-category="residential"
+                    class="filter-btn btn btn-outline hover:bg-[#ABEF5F]">Residential</button>
+                <button onclick="filterProjects('commercial')"
+                    data-category="commercial"
+                    class="filter-btn btn btn-outline hover:bg-[#ABEF5F]">Commercial</button>
+                <button onclick="filterProjects('modern')"
+                    data-category="modern"
+                    class="filter-btn btn btn-outline hover:bg-[#ABEF5F]">Modern</button>
+                <button onclick="filterProjects('traditional')"
+                    data-category="traditional"
+                    class="filter-btn btn btn-outline hover:bg-[#ABEF5F]">Traditional</button>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="container mx-auto pb-16">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+
+                <!-- Project Card 1 -->
+                <div
+                    class="project-card card bg-base-100 shadow-xl hover:shadow-2xl transition-all"
+                    data-category="modern">
+                    <figure class="relative overflow-hidden">
+                        <img
+                            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace"
+                            class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
+                            alt="Modern Living Room">
+                        <div
+                            class="absolute top-4 left-4 bg-[#ABEF5F] px-3 py-1 rounded-full text-sm font-bold">Modern</div>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Modern Living Space</h2>
+                        <p class="text-gray-600">Contemporary design with clean
+                            lines</p>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">View
+                                Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div
+                    class="project-card card bg-base-100 shadow-xl hover:shadow-2xl transition-all"
+                    data-category="residential">
+                    <figure class="relative overflow-hidden">
+                        <img
+                            src="https://images.unsplash.com/photo-1600585154526-990dced4db0d"
+                            class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
+                            alt="Cozy Bedroom">
+                        <div
+                            class="absolute top-4 left-4 bg-[#ABEF5F] px-3 py-1 rounded-full text-sm font-bold">Residential</div>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Cozy Bedroom Suite</h2>
+                        <p class="text-gray-600">Comfortable and stylish bedroom
+                            design</p>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">View
+                                Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div
+                    class="project-card card bg-base-100 shadow-xl hover:shadow-2xl transition-all"
+                    data-category="commercial">
+                    <figure class="relative overflow-hidden">
+                        <img
+                            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2"
+                            class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
+                            alt="Office Space">
+                        <div
+                            class="absolute top-4 left-4 bg-[#ABEF5F] px-3 py-1 rounded-full text-sm font-bold">Commercial</div>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Modern Office Design</h2>
+                        <p class="text-gray-600">Productive workspace
+                            solutions</p>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">View
+                                Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div
+                    class="project-card card bg-base-100 shadow-xl hover:shadow-2xl transition-all"
+                    data-category="traditional">
+                    <figure class="relative overflow-hidden">
+                        <img
+                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"
+                            class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
+                            alt="Traditional Living Room">
+                        <div
+                            class="absolute top-4 left-4 bg-[#ABEF5F] px-3 py-1 rounded-full text-sm font-bold">Traditional</div>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Classic Living Room</h2>
+                        <p class="text-gray-600">Elegant traditional interior
+                            with timeless appeal</p>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">View
+                                Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div
+                    class="project-card card bg-base-100 shadow-xl hover:shadow-2xl transition-all"
+                    data-category="commercial">
+                    <figure class="relative overflow-hidden">
+                        <img
+                            src="https://images.unsplash.com/photo-1497366216548-37526070297c"
+                            class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
+                            alt="Office Space">
+                        <div
+                            class="absolute top-4 left-4 bg-[#ABEF5F] px-3 py-1 rounded-full text-sm font-bold">Commercial</div>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Modern Office Complex</h2>
+                        <p class="text-gray-600">Contemporary workspace
+                            design</p>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">View
+                                Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div
+                    class="project-card card bg-base-100 shadow-xl hover:shadow-2xl transition-all"
+                    data-category="modern">
+                    <figure class="relative overflow-hidden">
+                        <img
+                            src="https://images.unsplash.com/photo-1556911220-bff31c812dba"
+                            class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
+                            alt="Modern Kitchen">
+                        <div
+                            class="absolute top-4 left-4 bg-[#ABEF5F] px-3 py-1 rounded-full text-sm font-bold">Modern</div>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Luxury Kitchen Design</h2>
+                        <p class="text-gray-600">Sleek and functional kitchen
+                            space</p>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">View
+                                Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div
+                    class="project-card card bg-base-100 shadow-xl hover:shadow-2xl transition-all"
+                    data-category="residential">
+                    <figure class="relative overflow-hidden">
+                        <img
+                            src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14"
+                            class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
+                            alt="Luxury Bathroom">
+                        <div
+                            class="absolute top-4 left-4 bg-[#ABEF5F] px-3 py-1 rounded-full text-sm font-bold">Residential</div>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Luxury Bathroom Suite</h2>
+                        <p class="text-gray-600">Spa-inspired bathroom
+                            design</p>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">View
+                                Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer (Same as other pages) -->
+        <footer class="bg-[#1C1C1C]">
+            <div class="container mx-auto py-12 md:py-24">
+                <div class=" text-center">
+                    <a
+                        class="btn  btn-ghost text-3xl font-extrabold text-white mb-4">
+                        <span
+                            class="h-10 w-10 bg-[#ABEF5F] mx-auto p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="black"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span> Rinterio
+                    </a>
+                    <p
+                        class="font-medium w-[90%] md:w-2/4 mx-auto text-dark2 mb-12">The
+                        barn house captivates with its blend of rustic charm
+                        and modern sophistication, featuring weathered wood,
+                        sleek metal accents.</p>
+                </div>
+                <div class>
+                    <ul
+                        class="md:flex md:flex-row md:w-9/12 justify-between items-center mx-auto text-white text-center gap-8">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/service.html">Services</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/blogs.html">Blogs</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="block text-center mt-12 ">
+                    <a
+                        class="btn bg-[#ABEF5F] hover:bg-[#91da3fd2] rounded-full w-11/12 items-center  md:w-[212px] text-xl font-extrabold px-5 h-12 border-none">Book
+                        Consult
+                        <span
+                            class="h-8 w-8 bg-[#000000]  p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="white"
+                                class="size-4">
+                                <path fill-rule="evenodd"
+                                    d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+        <script>
+        // Add your JavaScript code here
+        function filterProjects(category) {
+    const projects = document.querySelectorAll('.project-card');
+    const buttons = document.querySelectorAll('.filter-btn');
+    
+    buttons.forEach(btn => {
+        if(btn.getAttribute('data-category') === category) {
+            btn.classList.add('bg-[#ABEF5F]', 'text-black');
+            btn.classList.remove('btn-outline');
+        } else {
+            btn.classList.remove('bg-[#ABEF5F]', 'text-black');
+            btn.classList.add('btn-outline');
+        }
+    });
+
+    projects.forEach(project => {
+        if(category === 'all') {
+            project.style.display = 'block';
+        } else {
+            project.style.display = project.getAttribute('data-category') === category ? 'block' : 'none';
+        }
+    });
+}
+    </script>
+    </body>
+</html>
